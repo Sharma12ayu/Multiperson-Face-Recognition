@@ -92,5 +92,5 @@ You must generate your own dataset and `.pkl` file before running.
 
 ## 🧑‍💻 Author
 
-Made with ❤️ by **Ayush**  
+Made with ❤️ by **Ayushi**  
 Feel free to fork and improve!
