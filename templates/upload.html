@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Image</title>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        input[type=file] {
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        input[type=submit] {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #00ffcc;
+            border: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>🖼️ Upload an Image to Recognize Faces</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required><br>
+        <input type="submit" value="Upload & Detect">
+    </form>
+</body>
+</html>

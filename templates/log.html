@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recognition Logs</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #444;
+        }
+        th {
+            background-color: #00ffcc;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 Recognition Log</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Time</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.Name }}</td>
+            <td>{{ row.Date }}</td>
+            <td>{{ row.Time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><a href="/">Back to Live Feed</a></p>
+</body>
+</html>

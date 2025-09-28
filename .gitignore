@@ -1,0 +1,20 @@
+# Ignore dataset contents
+dataset/*
+!dataset/.gitkeep
+
+# Ignore encoded faces
+encodings/*
+!encodings/.gitkeep
+
+# Ignore uploaded images
+uploads/*
+!uploads/.gitkeep
+
+# Ignore logs
+logs/*
+!logs/.gitkeep
+
+# Ignore Python cache and environment files
+__pycache__/
+*.pyc
+.env

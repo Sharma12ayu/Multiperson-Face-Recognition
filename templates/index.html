@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Person Face Recognition</title>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 2.5rem;
+            color: #00ffcc;
+        }
+
+        .video-container {
+            margin-top: 30px;
+        }
+
+        .video-frame {
+            width: 540px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+        }
+
+        .nav-buttons {
+            margin-top: 30px;
+        }
+
+        .nav-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #00ffcc;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #00ddaa;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🔍 Live Face Recognition System</h1>
+
+    <div class="video-container">
+        <img src="{{ url_for('video') }}" class="video-frame" alt="Live Video">
+    </div>
+
+    <div class="nav-buttons">
+        <a href="/upload">📤 Upload Image</a>
+        <a href="/logs">📊 View Logs</a>
+    </div>
+
+    <footer>
+        <p>Developed by Ayush • Flask + OpenCV + face_recognition</p>
+    </footer>
+
+</body>
+</html>
